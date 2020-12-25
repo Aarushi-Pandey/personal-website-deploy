@@ -1,17 +1,41 @@
 
-html{
-    background-color: #ffcad4;
-    /*font-family: 'Cookie', sans-serif;
-    font-family: 'Satisfy', cursive;*/
-    font-family: 'Consolas','Monaco','Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New';
-    scroll-padding-top: 10%;
+body{
+    background-color: #ffcad4 !important; 
+    font-family: 'Consolas','Monaco','Lucida Console','Liberation Mono','DejaVu Sans Mono','Bitstream Vera Sans Mono','Courier New' !important;
+    font-size: 18px;
 }
 
-@media screen and (max-width: 600px) {
-    #name {
-      font-size: 10vh;
-    }
-  }
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-inverse {
+    background-color: #d92368;
+    border-color: #d92368;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    color: #222; /* not working */
+}
+
+.navbar-inverse .navbar-brand {
+    color: #222;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #222;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #ec8882;
+    color: #222;
+}
+
+.navbar-inverse .navbar-header > a:hover, .navbar-inverse .navbar-header > a:focus {
+    color: #222;
+}
+
+html {
+    scroll-padding-top: 7% !important;
+}
 
 #navbar {
     background-color: #d92368;
