@@ -1,37 +1,69 @@
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="XXX.css?v=1.0" rel="stylesheet" type="text/css" />
 
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" id="html">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aarushi's Portfolio</title>
     </head>
     <body>
-        <div id="navbar"> 
-            
-            <p id="name"><a href="#" class="navbar-links">Aarushi Pandey</a></p>
-            <div id="navbar-buttons">
-                <a href="#about-me" class="navbar-links sections" data-offset="100"><p class="navbar-button">About Me</p></a>
-                <a href="#projects" class="navbar-links sections"><p class="navbar-button">Projects</p></a>
-                <a href="#resume" class="navbar-links sections"><p class="navbar-button">Resume</p></a>
-                <a href="#contact-me" class="navbar-links sections"><p class="navbar-button">Contact Me</p></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+            <a class="navbar-brand" href="#">Aarushi Pandey</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact Me</a>
+                  </li>
+              </ul>
             </div>
-        
-        </div>
-        <div id="other-sections">
-            <div id="introduction">
-                <div id="introduction-container">                     
-                    <div id="intro-left">
+          </nav>
+        <!--
+        <nav class="navbar navbar-inverse navbar-fixed-top"> 
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Aarushi Pandey</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>-->
+            <div class="container"> <!-- id="introduction" -->
+                <div class="jumbotron introduction"> <!-- id="introduction-container"-->                    
+                    <!--<div id="intro-left"> -->
                         <!-- <div id="img-container"> -->
-                            <img src="pictures\AarushiPandey.jpg" alt="Aarushi Pandey" id="personal-img" />
+                            <img class="img-responsive img-circle center-block" src="pictures\AarushiPandey.jpg" alt="Aarushi Pandey"  id="personal-img"/> <!-- id="personal-img"--> 
                         <!--</div> -->
                         <p id="introduction-text">Hello,I'm Aarushi&#128075;</p>
-                    </div>
+                    <!--</div> -->
                     <!--
                     <div id="intro-right">
                         <div id="img-container2">
@@ -40,11 +72,12 @@
                     </div>  -->
                 </div>
             </div>
-            <div id="about-me">
-                <p class="section-heading">&#128516;About Me&#128516;</p>
-                <div id="about-me-container">
-                    <div id="description-about-me">
-                        <p id="description1">Hi! My name is Aarushi. A Computer Science sophomore interested in Web Development, I was an Undergraduate Teaching 
+            <div class="container"> <!-- id="about-me"> -->
+                <div class="jumbotron about-me"> <!--id="about-me-container"> -->
+                    <p class="section-heading">&#128516;<b>About Me</b>&#128516;</p>
+                    <div class="jumbotron about-me-container">
+                    <!--<div id="description-about-me">-->
+                        <p>Hi! My name is Aarushi. A Computer Science sophomore interested in Web Development, I was an Undergraduate Teaching 
                             Intern for the Freshman Seminar course (ECS 1100) in our university for Fall 2020. Throughout high school and 
                             college, I've done a number of projects (using Java, R, HTML, CSS, and React) but I'm always excited to learn 
                             new things, especially related to programming. EPICS (which was an optional course I was hyped to take) really 
@@ -54,16 +87,56 @@
                             To expand my knowledge and gain experience, I am looking for a Summer 2021 internship for Software Engineering or 
                             Computer Science. </p>
 
-                         <p id="description2">I'm involved in SWE (Society of Women Engineers) as a Website Development Committee member. I love being an officer 
+                         <p>I'm involved in SWE (Society of Women Engineers) as a Website Development Committee member. I love being an officer 
                              in SWE since it's helped me a lot personally and professionally. Apart from Computer Science, I love reading, 
                              listening to music, knitting, and learning Korean. (I've been a member of the Korean Language Club on campus 
                              since my first semester of college.) </p>
-                    </div>
+                    <!--</div>-->
+                </div>
                     <!-- <div id="img-container-about-me">
                         <img src="#" alt="Aarushi Pandey" id="personal-img-2" />
                     </div> -->
+                    <p class="hide-text-about-me">h</p>
                 </div>
             </div>
+            <div class="container"> <!-- id="about-me"> -->
+                <div class="jumbotron projects"> <!--id="about-me-container"> -->
+                    <p class="section-heading">&#10024;<b>Projects</b>&#10024;</p>
+                    <div class="projects-container row center-block">
+                    <!--<div id="description-about-me">-->
+                        <div class="col-md-4">
+                            <a href="https://github.com/acm-projects/Cultured#readme" target="_blank" class="read-more"><img src="pictures/cultured-project.png" class="project-img center-block img-responsive"></a>
+                            <div class="project-description center-block">
+                                <h4 class="project-title"><b>Cultured Web App</b></h4>
+                                <h5 class="project-description-text">Aims to immerse the user in the culture of a country of their choosing.</h5>
+                                <a href="https://github.com/acm-projects/Cultured#readme" target="_blank" class="read-more"><h5>Read More</h5></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="https://github.com/Codubee/ExploreCitiesTTH4-6#readme" target="_blank" class="read-more"><img src="pictures/explorezy.jpg" class="project-img center-block img-responsive"></a>
+                            <div class="project-description center-block">
+                                <h4 class="project-title"><b>Explorezy Website</b></h4>
+                                <h5 class="project-description-text">Aims to let users explore cities near them for a quick and fun getaway.</h5>
+                                <a href="https://github.com/Codubee/ExploreCitiesTTH4-6#readme" target="_blank" class="read-more"><h5>Read More</h5></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" target="_blank" class="read-more"><img src="pictures/beehive-monitoring.jpg" class="project-img center-block img-responsive"></a>
+                            <div class="project-description center-block">
+                                <h4 class="project-title"><b>Beehive Monitoring Project</h4></p>
+                                <h5 class="project-description-text">Aims to monitor physical properties of beehives in UTDallas’ apiary.</h5>
+                                <a href="#" target="_blank" class="read-more"><h5>Read More</h5></a>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                </div>
+                    <!-- <div id="img-container-about-me">
+                        <img src="#" alt="Aarushi Pandey" id="personal-img-2" />
+                    </div> -->
+                    <p class="hide-text-projects">hi</p>
+                </div>
+            </div>
+            <!--
             <div id="projects">
                 <p class="section-heading">&#10024;Projects&#10024;</p>
                 <div id="projects-container">
@@ -93,30 +166,38 @@
                     </div>
                 </div>
             </div>
-            <div id="resume">
-                <p class="section-heading">&#128196;Resume&#128196;</p>
-                <div id="resume-container">
-                    <embed src="Pandey_Aarushi.pdf" id="resume-pdf" />
+            -->
+            <div class="container"> 
+                <div class="jumbotron resume"> 
+                <p class="section-heading">&#128196;<b>Resume</b>&#128196;</p>
+                <div class="embed-responsive embed-responsive-4by3 resume-container">
+                    <embed src="Pandey_Aarushi.pdf" id="resume-pdf" class="center-block"/>
                 </div>
+                <p class="hide-text-resume">hi</p>
             </div>
-            <div id="contact-me">
-                <p class="section-heading">&#128222;Contact Me&#128222;</p>
-                <div id="contact-me-container">
+            </div>
+            <div class="container"> 
+                <div class="jumbotron contact-me">
+                <p class="section-heading">&#128222;<b>Contact Me</b>&#128222;</p>
+                <div class="jumbotron contact-me-container">
                     <div id="contact-me-text">
-                        <p>Phone: (+1) 425-553-5565</p>
-                        <p>Email: <a href="mailto:aarushipandey2211@gmail.com">aarushipandey2211@gmail.com</a></p>
-                        <div id="social-media-links">
+                        <p class="text-center">Phone: (+1) 425-553-5565</p>
+                        <p class="text-center">Email: <a href="mailto:aarushipandey2211@gmail.com">aarushipandey2211@gmail.com</a></p>
+                        <div class="text-center">
                             <a href="https://github.com/Aarushi-Pandey" target="_blank"> <i class="fa fa-github icon fa-2x"> </i></a> &nbsp;
                             <a href="https://www.linkedin.com/in/aarushi-s-pandey/" target="_blank"> <i class="fa fa-linkedin icon fa-2x"> </i></a>
                         </div>
                     </div>
+                    
                 </div>
+                <p class="hide-text-contact-me">hi</p>
             </div>
         </div>
         <div id="footer-container">
         <div id="footer">
             <p>© Aarushi Pandey</p>
         </div>
+    
     </div>
     </body>
 </html>
